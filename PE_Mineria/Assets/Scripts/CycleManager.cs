@@ -11,7 +11,9 @@ public class CycleManager : MonoBehaviour
     private void Start()
     {
 		cycleIndex = -1;
+		totalDaysIndex = 1;
 		ChangeTime();
+		NextDay();
     }
     public void ChangeTime()
 	{
