@@ -17,7 +17,7 @@ public class CameraRaycaster : MonoBehaviour
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit))
             {
-                print(hit.collider);
+                hit.transform.gameObject.GetComponent<MineHandler>().OnSelectEvent();
             }
         }
     }

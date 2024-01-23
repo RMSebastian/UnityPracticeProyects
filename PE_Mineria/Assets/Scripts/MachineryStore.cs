@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeCycle : MonoBehaviour
+public class MachineryStore : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
