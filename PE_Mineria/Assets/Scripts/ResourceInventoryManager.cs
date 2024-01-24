@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ResourceInventoryManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private List<StructQuantity> inventory = new List<StructQuantity>();
 
-    // Update is called once per frame
-    void Update()
+    public void SetNewInventory(StructQuantity newInventory)
     {
-        
+        inventory.Add(newInventory);
     }
 }

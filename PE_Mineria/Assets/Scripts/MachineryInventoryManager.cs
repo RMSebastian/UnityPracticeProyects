@@ -30,4 +30,8 @@ public class MachineryInventoryManager : MonoBehaviour
     {
         ownedMachinery.Add(newMachine);
     }
+    public void RemoverMachinery(MachinerySO machine)
+    {
+        ownedMachinery.Remove(machine);
+    }
 }

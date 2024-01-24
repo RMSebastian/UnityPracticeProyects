@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private MachineryInventoryManager machineryInventory;
     [SerializeField] private ResourceInventoryManager resourcesInventory;
+    [SerializeField] private StoreManager storeManager;
 
     private void Awake()
     {
@@ -18,4 +19,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => _instance;
     public MachineryInventoryManager MachineryInventory => machineryInventory;
     public ResourceInventoryManager ResourcesInventory => resourcesInventory;
+
+    public StoreManager StoreManager => storeManager;
 }

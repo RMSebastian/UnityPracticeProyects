@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Copper
   m_EditorClassIdentifier: 
   Name: Copper
-  Color: {r: 0.6509434, g: 0.373189, b: 0.003070495, a: 0}
+  Color: {r: 0.42352942, g: 0.18431373, b: 0, a: 0}
   ExtractionPerCycle: 100
+  initialPrice: 0
+  currentPrice: 0

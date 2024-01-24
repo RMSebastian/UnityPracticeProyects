@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Rock
   m_EditorClassIdentifier: 
   Name: Rock
-  Color: {r: 0.4245283, g: 0.18382375, b: 0, a: 0}
+  Color: {r: 0.42352942, g: 0.18431373, b: 0, a: 0}
   ExtractionPerCycle: 100
+  initialPrice: 0
+  currentPrice: 0
