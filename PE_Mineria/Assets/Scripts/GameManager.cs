@@ -19,6 +19,5 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => _instance;
     public MachineryInventoryManager MachineryInventory => machineryInventory;
     public ResourceInventoryManager ResourcesInventory => resourcesInventory;
-
     public StoreManager StoreManager => storeManager;
 }

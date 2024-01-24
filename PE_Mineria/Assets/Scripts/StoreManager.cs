@@ -8,7 +8,7 @@ public class StoreManager : MonoBehaviour
 {
     private WalletManager walletManager;
     private GameManager gameManager;
-
+    [SerializeField] private List<MachinerySO> machineries = new List<MachinerySO>();
     [SerializeField] private UnityEvent<float> OnInteractionEvent = new UnityEvent<float>();
     private void Start()
     {
@@ -28,4 +28,6 @@ public class StoreManager : MonoBehaviour
         walletManager.SubstractMoney(machinery.Cost);
         OnInteractionEvent.Invoke(WalletManager.Money);
     }
+
+    public List<MachinerySO> Machineries => machineries;
 }

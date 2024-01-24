@@ -34,4 +34,6 @@ public class MachineryInventoryManager : MonoBehaviour
     {
         ownedMachinery.Remove(machine);
     }
+
+    public List<MachinerySO> Machinery => ownedMachinery;
 }

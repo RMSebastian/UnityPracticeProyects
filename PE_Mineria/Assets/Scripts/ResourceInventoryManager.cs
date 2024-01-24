@@ -10,4 +10,6 @@ public class ResourceInventoryManager : MonoBehaviour
     {
         inventory.Add(newInventory);
     }
+
+    public List<StructQuantity> Inventory => inventory;
 }
