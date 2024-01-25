@@ -16,6 +16,7 @@ public class UIConsoleMenuPanel : MonoBehaviour
 
     private void Start()
     {
+        btnOpenConsole.onClick.AddListener(() => OpenConsole(true));
         gameManager = GameManager.Instance;
     }
     private void InitialConfiguration(bool active)
@@ -85,6 +86,5 @@ public class UIConsoleMenuPanel : MonoBehaviour
                 break;
         }
         xntDebugField.text = "";
-        
     }
 }

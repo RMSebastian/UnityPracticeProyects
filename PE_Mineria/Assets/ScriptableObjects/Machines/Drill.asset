@@ -15,6 +15,6 @@ MonoBehaviour:
   ID: 0
   Name: Drill
   Workers: 1
-  WorkForce: 1
-  Resource: {fileID: 11400000, guid: d27fc4b061e6a864492f955389cd3803, type: 2}
+  WorkForce: 0.8
+  Resource: {fileID: 11400000, guid: 49437b658ff616d46bac2d31d7b47906, type: 2}
   Cost: 250

@@ -7,8 +7,4 @@ public class ResourcesSO : ScriptableObject
     public string Name;
     public Color Color;
     public int ExtractionPerCycle;
-
-    [Header("Value on Market")]
-    public int initialPrice;
-    public int currentPrice;
 }

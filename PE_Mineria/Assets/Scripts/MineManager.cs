@@ -7,13 +7,8 @@ public class MineManager : MonoBehaviour
 {
     [SerializeField]private List<MineHandler> mineHandlers = new List<MineHandler>();
     [SerializeField]private List<ResourcesSO> typeOfResources = new List<ResourcesSO>();
-
     [SerializeField]private UnityEvent<ResourcesSO, UnityAction<MachinerySO>> OnSelectionEvent = new UnityEvent<ResourcesSO, UnityAction<MachinerySO>>();
-
     private int dayIndex = 0;
-
-    public void AddMineManager(MineHandler mineHandler)=> mineHandlers.Add(mineHandler);
-    private void SortLists<T>(List<T> list) where T: Object=> list.Sort((left, right) => left.name.CompareTo(right.name));
     public void UnlockMine(string days)
     { 
         int day = int.Parse(days);
@@ -29,15 +24,10 @@ public class MineManager : MonoBehaviour
             dayIndex = day;
         }
     }
-    public void AddQuantity()
-    {
-        for (int i = 0; i < dayIndex; i++)
-        {
-            mineHandlers[i].AddQuantity();
-        }
-    }
-    public void OnSelectEvent(ResourcesSO resources, UnityAction<MachinerySO> action)
-    {
-        OnSelectionEvent.Invoke(resources,action);    
-    }
+    public void AddMineManager(MineHandler mineHandler)=> mineHandlers.Add(mineHandler);
+    public void UpdateOnCycle() { for (int i = 0; i < dayIndex; i++) mineHandlers[i].UpdateOnCyle(); }
+    public void OnSelectEvent(ResourcesSO resources, UnityAction<MachinerySO> action) => OnSelectionEvent.Invoke(resources, action);    
+    private void SortLists<T>(List<T> list) where T: Object=> list.Sort((left, right) => left.name.CompareTo(right.name));
+
+
 }

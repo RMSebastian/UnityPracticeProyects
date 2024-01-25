@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraRaycaster : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class CameraRaycaster : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -20,5 +21,6 @@ public class CameraRaycaster : MonoBehaviour
                 hit.transform.gameObject.GetComponent<MineHandler>().OnSelectEvent();
             }
         }
+        
     }
 }

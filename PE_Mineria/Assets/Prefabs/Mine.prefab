@@ -2762,6 +2762,7 @@ GameObject:
   - component: {fileID: 5276715265624365491}
   - component: {fileID: 3851656923135181847}
   - component: {fileID: 1209176027978481370}
+  - component: {fileID: 1796546343984914741}
   m_Layer: 0
   m_Name: Mine
   m_TagString: Untagged
@@ -2862,11 +2863,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f9ed13fd792c24c97cde44dc6d46e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiInfoPanel: {fileID: 8718530994071274678}
-  uiResourcePanel: {fileID: 3415040775866873645}
-  machineGO: {fileID: 6819069500853312165}
   platformGO: {fileID: 6844375738511320788}
-  cameraPositionGO: {fileID: 3445881082467038991}
+--- !u!114 &1796546343984914741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318919896226128103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1caf668c063af0b45ab56c76c02c9e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiResourcePanel: {fileID: 3415040775866873645}
+  uiInfoPanel: {fileID: 8718530994071274678}
+  machineGO: {fileID: 6819069500853312165}
 --- !u!1 &5494719808656326308
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,6 +4207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b664a0ecbbf1b4792baef7c95c915e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPositionGO: {fileID: 3445881082467038991}
   resourcecsMenu: {fileID: 1275465991595686242}
   btnSellResources: {fileID: 8529578392346139282}
   btnAddToInventory: {fileID: 2897335245891585462}

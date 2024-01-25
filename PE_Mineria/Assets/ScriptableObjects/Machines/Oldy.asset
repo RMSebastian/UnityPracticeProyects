@@ -16,5 +16,5 @@ MonoBehaviour:
   Name: Oldy
   Workers: 0
   WorkForce: 0.5
-  Resource: {fileID: 11400000, guid: d2c399e9d90073145a3ef3224b0cb97e, type: 2}
+  Resource: {fileID: 11400000, guid: 49437b658ff616d46bac2d31d7b47906, type: 2}
   Cost: 0

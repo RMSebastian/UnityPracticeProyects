@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   Name: Gold
-  Color: {r: 0.8, g: 0.8, b: 0.8, a: 0}
-  ExtractionPerCycle: 50
+  Color: {r: 0.9529412, g: 0.77254903, b: 0.09411765, a: 0}
+  ExtractionPerCycle: 25
+  initialPrice: 0
+  currentPrice: 0

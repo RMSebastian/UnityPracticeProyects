@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c430f35dc2af5e45b24c018b20e2a5e, type: 3}
-  m_Name: Netherite
+  m_Script: {fileID: 11500000, guid: 9aae63a983e221146bc98d12b51e4494, type: 3}
+  m_Name: Workshop
   m_EditorClassIdentifier: 
-  Name: Netherite
-  Color: {r: 0.9529412, g: 0.77254903, b: 0.09411765, a: 0}
-  ExtractionPerCycle: 25
+  ID: 1
+  Name: Workshop
+  Workers: 5
+  WorkForce: 1.5
+  Resource: {fileID: 11400000, guid: d27fc4b061e6a864492f955389cd3803, type: 2}
+  Cost: 500

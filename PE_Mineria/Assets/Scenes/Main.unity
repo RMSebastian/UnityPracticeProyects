@@ -313,14 +313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineHandlers: []
   typeOfResources:
-  - {fileID: 11400000, guid: d2c399e9d90073145a3ef3224b0cb97e, type: 2}
   - {fileID: 11400000, guid: 49437b658ff616d46bac2d31d7b47906, type: 2}
-  - {fileID: 11400000, guid: 9478c0f4b5306384b8d1d593fe07072d, type: 2}
   - {fileID: 11400000, guid: d27fc4b061e6a864492f955389cd3803, type: 2}
   - {fileID: 11400000, guid: 554c3a251b33d5a42b50dedef990104d, type: 2}
-  - {fileID: 11400000, guid: 240a0dedf91db2842b6796fab1b4bf37, type: 2}
-  - {fileID: 11400000, guid: 1cef3868245b845459f72d52b58ecfcd, type: 2}
-  - {fileID: 11400000, guid: 918a7c78c07d12a4f870b2fa0185b1a5, type: 2}
   OnSelectionEvent:
     m_PersistentCalls:
       m_Calls:
@@ -879,7 +874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9186996083821286603, guid: 07f51b8f241e60e4f867b5ab451d7757, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.36
+      value: -0.224
       objectReference: {fileID: 0}
     - target: {fileID: 9186996083821286603, guid: 07f51b8f241e60e4f867b5ab451d7757, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1500,6 +1495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   machineries:
   - {fileID: 11400000, guid: 4c7e095616d7d1b4fb64ec8bd3040a89, type: 2}
+  - {fileID: 11400000, guid: f2295297a6ec3ee418eb430629b5b3a9, type: 2}
   - {fileID: 11400000, guid: 7aedd6d9e5fca5b4b852ace20e20f824, type: 2}
   OnInteractionEvent:
     m_PersistentCalls:
@@ -4340,7 +4336,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 201985856}
         m_TargetAssemblyTypeName: MineManager, Assembly-CSharp
-        m_MethodName: AddQuantity
+        m_MethodName: UpdateOnCycle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5049,7 +5045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9186996083821286603, guid: 07f51b8f241e60e4f867b5ab451d7757, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.225
+      value: -1.358
       objectReference: {fileID: 0}
     - target: {fileID: 9186996083821286603, guid: 07f51b8f241e60e4f867b5ab451d7757, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5930,19 +5926,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2073161366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1608971093}
-        m_TargetAssemblyTypeName: UIConsoleMenuPanel, Assembly-CSharp
-        m_MethodName: OpenConsole
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2135375253
 GameObject:
   m_ObjectHideFlags: 0

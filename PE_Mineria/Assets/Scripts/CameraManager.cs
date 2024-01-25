@@ -8,7 +8,7 @@ public class CameraManager : MonoBehaviour
     private Quaternion initialRotation;
     private float initialOrotgraphicSize;
     private Camera cam;
-    private void Start()
+    private void Awake()
     {
         cam = GetComponent<Camera>();
         initialOrotgraphicSize = cam.orthographicSize;
